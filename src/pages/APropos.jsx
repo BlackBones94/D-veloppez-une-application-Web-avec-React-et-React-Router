@@ -1,7 +1,8 @@
+import ProposPicture from "../components/ProposPicture";
 
 function Propos() {
     return (
-      <h1>A Propos</h1>
+      <ProposPicture />
     );
   }
   
