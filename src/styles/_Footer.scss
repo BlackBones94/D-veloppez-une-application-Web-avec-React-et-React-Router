@@ -1,0 +1,23 @@
+.FootDiv{
+    // background-color: ${colors.footerColor};
+    text-align: center;
+    align-items: center;
+    display : flex;
+    flex-direction : column;
+    background-color: black;
+    margin-top: 5%;
+}
+
+.LogoSize {
+width : 122px;
+height : 39.44px;
+padding-top : 66px;
+}
+
+.FontH5{
+    font-weight : 500; 
+    font-size: 24px;
+    line-height :  34.22px;
+    color: white;
+    // color : ${colors.whiteFont}
+}

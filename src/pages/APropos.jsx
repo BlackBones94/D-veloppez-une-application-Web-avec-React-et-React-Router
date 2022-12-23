@@ -1,8 +1,11 @@
 import ProposPicture from "../components/ProposPicture";
-
+import DropText from "../components/Dropdown";
 function Propos() {
     return (
-      <ProposPicture />
+      <div>
+        <ProposPicture />
+        <DropText />
+      </div>
     );
   }
   

@@ -1,9 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import "./styles/main.scss";
 import Home from './pages/Home';
 import Propos from './pages/APropos';
 import Error from './components/Error';
+import House from './pages/House';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
@@ -23,13 +25,13 @@ root.render(
       <GlobalStyle />
       <Header />
       <Routes>
-        <Route exact path='/' element= {<Home />}/>
+        <Route path='/' element= {<Home />}/>
         <Route path = '/propos/' element = {<Propos />}/>
-        <Route path = "*" element={<Error />}/>
+        <Route path='/:id' element = {<House />} />
+        <Route path = "/error" element={<Error />}/>
       </Routes>
       <Footer />  
     </Router>
-   
   </React.StrictMode>
 );
 

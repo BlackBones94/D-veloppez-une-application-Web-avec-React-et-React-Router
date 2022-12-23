@@ -1,0 +1,46 @@
+.cardImg{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    // text-align: center;
+    cursor: pointer;
+}
+
+.cardTitle{
+    position: relative;
+    font-size: 18px;
+    line-height: 25.67px;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+    width: 300px;
+    height: 52px;
+    left: 2%;
+    top: 100%;
+    text-align: left;
+    color: white;
+
+}
+
+.card{
+    width: 90%;
+    height: 100%;
+    background-color: #F6F6F6;
+     display: grid;
+     grid-template-columns: auto auto auto;
+     text-align: center;
+     border-radius: 10px;
+     margin-left: auto;
+    margin-right: auto;
+}
+
+.cardDiv{
+    width: 340px;
+    height: 340px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 15%;
+    text-decoration: none;
+}
+
