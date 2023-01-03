@@ -3,9 +3,14 @@
     font-size : 288px;
     text-align : center;
     line-height : 41.69px;
-    // color : ${colors.redFont};
     padding-top: 167px;
     color: #FF6060;
+        @media screen and (max-width:375px ){
+            font-size: 96px;
+            line-height: 136.9px;
+            padding-top: 83px;
+            margin: 0;
+        }   
 }
 
 .ErrorPage{
@@ -14,7 +19,14 @@
     text-align : center;
     line-height : 51.34px;
     color: #FF6060;
-    // color : ${colors.redFont};
+        @media screen and (max-width:375px ){
+            font-size: 18px;
+            line-height: 25.67px;
+            width: 260px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    
 }
 
 .StyledLinkHomeReturn  {
@@ -23,7 +35,9 @@
     display : block;
     text-align : center;
     line-height : 25.67px;
-    // color : ${colors.redFont};
     color : #FF6060;
-    padding-bottom : 159px
+    padding-bottom : 159px;
+        @media screen and (max-width:375px ){
+            padding-top: 67px;
+    }
 }

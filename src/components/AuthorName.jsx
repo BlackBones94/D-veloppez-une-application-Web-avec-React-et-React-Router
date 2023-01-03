@@ -4,9 +4,9 @@ function AuthorName(props) {
     console.log("props AUTHOR" ,props)
 
     return(
-        <div>
-            {props.host ? <p>{props.host.name}</p> : true}
-            {props.host ? <img src= {props.host.picture}/> :true}
+        <div className="hostDiv">
+            {props.host ? <p className="hostName">{props.host.name}</p> : true}
+            {props.host ? <img className="hostPicture" src= {props.host.picture} alt="miniature"/> :true}
             
         </div>
     )

@@ -1,5 +1,5 @@
 import React, {useState , useEffect} from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function CardList() {
     const [data, setData] = useState([]);
@@ -21,10 +21,10 @@ function CardList() {
 
         <div className="card">
             {data.map((item)  => (
-                    <Link className="cardDiv" key ={item.id} to = {item.id}>
+                    <NavLink className="cardDiv" key ={item.id} to = {item.id}>
                         <h5 className="cardTitle"> {item.title}</h5>
                         <img className="cardImg" src= {item.cover} alt= 'coverCard' />
-                    </Link>
+                    </NavLink>
                 ))}
         </div>
     )

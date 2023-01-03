@@ -9,11 +9,12 @@ function Rating (props) {
     console.log(activeStars)
     
     return (
-        <div >
-            {[...new Array(totalStars)].map((arr, index) => {
-            return index < activeStars ? <img src={Full} alt="pleine" /> : <img src={Empty} alt="vide" />;
+        <div className="ratingDiv" >
+            {[...new Array(totalStars)].map((arr ,index) => {
+            return index <activeStars ? <img key= {index} src={Full} alt="pleine" /> : <img key={index} src={Empty} alt="vide" />;
             })}
         </div>
+
      );
 }
 

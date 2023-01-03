@@ -1,11 +1,11 @@
 import TitleHouse from "../components/TitleHouse";
 import AuthorName from "../components/AuthorName";
 import Tag from "../components/Tag";
-import DropdownHouse from "../components/DropdownHouse";
 import Caroussel from "../components/Caroussel";
 import Rating from "../components/Rating";
 import React, {useEffect , useState } from "react";
 import {useParams , useNavigate} from "react-router-dom"; 
+import Dropdown from "../components/Dropdown";
 
 function House () {
     const [data, setData] = useState([{}]);
@@ -42,26 +42,39 @@ function House () {
             <Caroussel 
             pictures = {data.pictures}
             />
-            <TitleHouse 
-            title = {data.title}
-            location = {data.location}
-            />
-            <AuthorName 
-            host = {data.host}
-            />
+            <div className="TitleAndAuthor">
+                <TitleHouse 
+                title = {data.title}
+                location = {data.location}
+                />
+                <AuthorName 
+                host = {data.host}
+                />
+            </div>
+
+            <div className="TagSection">
+                <Tag  
+                    tags = {data.tags}
+                    />
+            </div>
+
+            <div className="RatingSection">
             
-            <Tag  
-            tags = {data.tags}
-            />
 
-            <Rating 
-            rating =  {data.rating}
-            />
+                <Rating 
+                rating = {data.rating}
+                />
+            </div>
 
-            <DropdownHouse
-                description = {data.description}
-                equipments = {data.equipments}
-            />
+            <div className="DropsdownAll">
+                <div className="DropdownDescription">
+                    <Dropdown name="Description" content = {data.description} />
+                </div>
+
+                <div className="DropdownEquipements">
+                    <Dropdown name="Equipements" content = {data.equipments} />
+                </div>
+            </div>
         </div>
     );
 

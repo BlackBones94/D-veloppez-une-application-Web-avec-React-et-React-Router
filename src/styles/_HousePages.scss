@@ -1,19 +1,128 @@
+.TitleAndAuthor{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
 .titleHouse{
     color: #FF6060;
-    // height: 51px;
+    height: 51px;
     font-weight: 500;
-    size: 36px;
+    font-size: 36px;
+    line-height: 51.34px;
+    @media screen and (max-width:375px ){
+        font-size: 18px;
+        margin: 0;
+    }
 }
 
 .cityHouse{
-    position: relative;
     bottom: 20px;
     color: #FF6060;
-    width: 176px;
     font-weight: 500;
-    size: 18px;
+    font-size: 18px;
     line-height: 25.67px;
+    @media screen and (max-width:375px ){
+        font-size: 14px;
+        line-height: 19.96px;
+        margin: 0;
+    }
+}
+
+.hostDiv{
+    display: flex;
+    padding-top: 2%;
+    @media screen and (max-width:375px ){
+        height: 50px;
+        position: absolute;
+        top: 59%;
+        left: 55%;
+    }
+    
+}
+
+.hostName{
+    padding-right: 10px;
+    position: relative;
+    bottom: 15px;
+    width: 93px;
+    height: 52px;
+    font-weight: 500;
+    line-height: 25.67px;
+    font-size: 18px;
+    color: #FF6060;
+    @media screen and (max-width:375px ){
+        font-size: 12px;
+        width: 93px;
+    }
 }
 
 
+.hostPicture{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    @media screen and (max-width:375px ){
+        width: 32px;
+        height: 32px;
+    }
+}
 
+.RatingSection{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    bottom: 47px;
+    padding-left: 2.5%;
+    @media screen and (max-width:375px ){
+        display: block;
+        position: unset;
+        bottom: 0;
+    }
+}
+
+.ulTag{
+    padding-left: 5%;
+    display: flex;
+    list-style-type: none;
+    @media screen and (max-width:375px ){
+        padding-left: 5%;
+    }
+}
+
+.liTag{
+    padding-top: 5px;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 10px;
+    margin-right: 10px;
+    width: 115px;
+    height: 25px;
+    background-color: #FF6060;
+    color: white;
+    text-decoration: none;
+    @media screen and (max-width:375px ){
+        width: 84px;
+        height: 18px;
+        font-size: 10px;
+        
+    }
+}
+
+.ratingDiv{
+    padding-left: 5%;
+    padding-right: 5%;
+    @media screen and (max-width:375px ){
+        img{
+            width: 15px;
+            height: 15px;
+        }
+    }
+    
+}
+
+.ulDropdown {
+    margin: 0;
+    padding-left: 5%;
+}

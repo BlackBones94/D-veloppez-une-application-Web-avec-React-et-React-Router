@@ -15,4 +15,9 @@
     margin-right: auto;
     border-radius : 25px;
     filter: brightness(65%);
+    @media screen and (max-width:375px ){
+        object-fit: cover;
+    
+        height: 232px;
+    } 
 }
