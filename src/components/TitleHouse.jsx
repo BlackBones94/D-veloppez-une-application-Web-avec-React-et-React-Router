@@ -10,8 +10,6 @@ function TitleHouse(props) {
                 <div>
                     <h3 className="titleHouse">{props.title}</h3>
                     <h5 className="cityHouse">{props.location}</h5>
-                    <div className="tagsContainers" >  
-                    </div>
                 </div>
         </div> 
     );

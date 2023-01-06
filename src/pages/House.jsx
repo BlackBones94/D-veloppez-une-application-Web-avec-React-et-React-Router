@@ -59,8 +59,6 @@ function House () {
             </div>
 
             <div className="RatingSection">
-            
-
                 <Rating 
                 rating = {data.rating}
                 />
